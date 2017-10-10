@@ -1,0 +1,113 @@
+       @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+	        /*bakgrunnsbilde*/
+	   html {
+	    background: url("http://www-ia.hiof.no/~valeriea/pages/web/oblig2/purplemoon.gif")no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	   }
+	   /* Grid plasseringer */
+	   .master-grid {
+	    margin: auto;
+	    width: 100%;
+	    max-width: 100%;
+	    display: grid;
+	    grid-row-gap: 20px;
+	    grid-column-gap: 20px;
+	    grid-template-areas: 
+	                        "header header header"
+	                        "menu menu menu"
+	                        "info info info"
+	                        "footer footer footer";
+	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-template-rows: auto auto auto auto auto;
+	   }
+
+	/*Innstillinger for de ulike elementene*/
+	   header {
+	    grid-area: header;
+	    text-align: center;
+	    position: relative;
+	    box-sizing: border-box;
+	    background-color:transparrent;
+	   }
+
+	   #menu {
+	      grid-area: menu;
+	      font-family: 'Libre Baskerville', serif;
+	      text-align: center;
+	      width: 100%;
+	      position: relative;
+	      background-color: #FFFFFF;
+	      display: inline-block;
+	     font-size: 20px;
+	     color: black;
+	     border-bottom: 1px solid #000000;
+	     font-family: 'Libre Baskerville', serif;
+	   }
+
+	   #menu > a {
+	    text-decoration:none;
+	    color: purple;
+	    text-align:center;
+	    width: 5%;
+	   }
+
+
+	   .menu-item {
+	    width:90%;
+	    padding: 50px;
+	   }
+
+	   #info {
+	    grid-area: info;
+	    box-sizing: border-box;
+	    background-color:#FFFFFF;
+	    border-radius: 5px;
+	    text-align: center;
+	    font-size: 11px;
+
+	   }
+
+
+	   footer {
+	    grid-area:footer;
+	    box-sizing: border-box;
+	    background-color:#FFFFFF;
+	    border-top: 1px solid;
+	    border-radius: 5px;
+	    padding: 5px;
+	    text-align: center;
+	   }
+
+	   /*Skrift, størrelser og farger*/
+
+	   #info h2{
+	    border-bottom: 1px solid #000000;
+	   }
+
+
+	   h1 {
+	    font-family: 'Libre Baskerville', serif;
+	    color: white;
+	    font-size: 80px;
+	   }
+
+	   h2 {
+	    font-family: 'Libre Baskerville', serif;
+	    font-size: 25px;
+	    text-align: center;
+	   }
+	   
+	   p{
+	    font-family: 'Libre Baskerville', serif;
+	    font-size: 15px;
+	   }
+
+	   footer a{
+	    color:#000000;
+	    font-size: 15px;
+	    border-bottom: 1px dashed #000000;
+	   }
+
